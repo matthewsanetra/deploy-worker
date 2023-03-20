@@ -1,0 +1,10 @@
+name = "deploy-worker"
+main = "src/index.ts"
+compatibility_date = "2023-03-20"
+
+[triggers]
+crons = [ "59 14 * * *" ]
+
+[vars]
+# Required secrets:
+# - DEPLOY_HOOK_URL
